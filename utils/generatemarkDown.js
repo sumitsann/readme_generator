@@ -2,26 +2,35 @@ function generatemarkDown(answers) {
   return `
   # ${answers.title}
   
-  ## Table of content
-  -[Project Description](#Descrtiption)
-  -[Usage](#Usage)
-  -[Contribution](#Contribution)
-  -[Installation](#Installation)
-  -[Questions](#Questions)
-  -[License](#License)
   ## Description
   ${answers.description}
-  ## Usage
-  ${answers.usage}
+
+  ## Table of contents
+  -[Installation](#Installation)
+  -[Usage](#Usage)
+  -[Contribution](#Contribution)
+  -[License](#License)
+
   ## Installation
   ${answers.installation}
+
+  ## Usage
+  ${answers.usage}
+  
   ## Contribution
   ${answers.contribution}
+
+    ## License
+  ${answers.license}
+
+  ## Tests
+  ${answers.tests}
+
+  
   ## Questions
   ${answers.email}
   ${answers.github}
-  ## License
-  ${answers.license}
+
    
   `;
 }

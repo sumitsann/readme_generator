@@ -21,21 +21,29 @@ const questions = [
     type: "input",
     name: "description",
     message: "Can you describe about your project?",
+    validate: (value) => {
+      if (value) {
+        return true;
+      } else {
+        ("Please enter a value");
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "installation",
+    message: "Let us know about the installation steps.",
   },
   {
     type: "input",
     name: "usage",
     message: "What is your project usage?",
   },
-  {
-    type: "input",
-    name: "installation",
-    message: "Let us know about the installation instructions.",
-  },
+
   {
     type: "input",
     name: "contribution",
-    message: "Please provide the contribution information?",
+    message: "Please provide the collaborators information.",
   },
   {
     type: "input",
@@ -56,6 +64,11 @@ const questions = [
       return val.toLowerCase();
     },
   },
+  {
+    type: "input",
+    name: "tests",
+    message: "Please write the test scrips.",
+  },
 ];
 
 //
@@ -68,7 +81,7 @@ function writeToFile() {
     console.log(answerObject);
 
     answerObject = generatemarkDown(answerObject);
-    fs.writeFile("./Readme.md", answerObject, (err) => {
+    fs.writeFile("./readme/README.md", answerObject, (err) => {
       if (err) throw err;
 
       console.log("Success! Your README.md file has been generated");
