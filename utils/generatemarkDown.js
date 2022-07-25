@@ -20,7 +20,7 @@ function generatemarkDown(answers) {
   ## Contribution
   ${answers.contribution}
 
-    ## License
+  ## License
   ${answers.license}
 
   ## Tests
