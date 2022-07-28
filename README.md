@@ -32,3 +32,12 @@ None
 
 sumit.ojha.dev@gmail.com
 sumitsann
+
+## Screenshots
+
+![](./assets/images/Screenshot1.jpg)
+![](./assets/images/Screenshot2.jpg)
+
+## Video Walkthrough
+
+https://youtu.be/zSQ53bM1Vn8

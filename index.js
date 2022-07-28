@@ -84,7 +84,9 @@ function writeToFile() {
     fs.writeFile("./readme/README.md", answerObject, (err) => {
       if (err) throw err;
 
-      console.log("Success! Your README.md file has been generated");
+      console.log(
+        "Success! Your README.md file has been generated inside the readme folder"
+      );
     });
   });
 }
